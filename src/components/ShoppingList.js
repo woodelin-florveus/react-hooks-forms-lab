@@ -31,7 +31,7 @@ function ShoppingList({ items, onItemFormsub }) {
       setFood(upDatedFood);
     }
 
-    console.log(food)
+    // console.log(food)
   
       // console.log(item)
   

@@ -22,14 +22,14 @@ function ItemForm({ onItemFormsub }) {
         console.log(newItem)
   
     }
-    
-
-  
-
-
+ 
   function handleChange(event){
     setName(event.target.value)
     // console.log(setName)
+  }
+
+  function handleCategoryChange(event){
+    setCategory(event.target.value)
   }
 
   return (
@@ -45,7 +45,7 @@ function ItemForm({ onItemFormsub }) {
 
       <label>
         Category:
-        <select name="category">
+        <select name="category" value={category} onChange={handleCategoryChange}>
           <option value="Produce">Produce</option>
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
